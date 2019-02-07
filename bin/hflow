@@ -152,7 +152,7 @@ function hflow_run() {
       plugins.forEach(function(plugin) {
           plugin.init(rcl, wflib, engine);
       });
-      
+
       // TODO: Check is it needed
       // engine.syncCb = function () {
       //   process.exit();
