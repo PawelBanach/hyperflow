@@ -1,6 +1,8 @@
-var fsp = require('./fileSplitter.js'), 
+var fsp = require('./fileSplitter.js'),
     cmd = require('./command.js'),
     amqpCmd = require('./amqpCommand.js'),
+    awsCmd = require('./awsCommand.js'),
+    gcfCmd = require('./gcfCommand.js'),
     RESTCmd = require('./RESTServiceCommand.js'),
     scanDir = require('./DirScanner').scanDir;
 
@@ -211,6 +213,8 @@ exports.length = length;
 exports.fileSplitter = fsp.fileSplitter;
 exports.command = cmd.command;
 exports.amqpCommand = amqpCmd.amqpCommand;
+exports.gcfCommand = gcfCmd.gcfCommand;
+exports.awsCommand = awsCmd.awsCommand;
 exports.RESTServiceCommand = RESTCmd.RESTServiceCommand;
 exports.exit = exit;
 exports.command_print = cmd.command_print;
